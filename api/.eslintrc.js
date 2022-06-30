@@ -20,6 +20,7 @@ module.exports = {
   },
 
   rules: {
+    'prettier/prettier': ['off', { singleQuote: true }],
     'array-callback-return': 'error',
     'constructor-super': 'error',
     curly: 'error',
