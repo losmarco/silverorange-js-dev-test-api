@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
-import SortedList from './components/List/SortedList';
+import RepoList from './components/RepoList';
+
 const API = 'http://localhost:4000/repos';
 
 function FetchData() {
@@ -36,7 +37,7 @@ function FetchData() {
       )}
 
       {/* Display Loading state or <List/> */}
-      {isLoading ? `Loading...` : <SortedList data={data} />}
+      {isLoading ? `Loading...` : <RepoList data={data} />}
     </>
   );
 }
