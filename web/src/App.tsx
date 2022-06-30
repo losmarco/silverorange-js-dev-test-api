@@ -4,5 +4,9 @@ import './App.css';
 import FetchData from './FetchData';
 
 export function App() {
-  return <FetchData />;
+  return (
+    <main>
+      <FetchData />
+    </main>
+  );
 }
